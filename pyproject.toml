@@ -1,0 +1,24 @@
+[project]
+name = "pycopilot"
+version = "0.1.0"
+description = "A simple MCP server with local copilot"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.24.0",
+]
+
+[project.scripts]
+pycopilot = "pycopilot.server:run"
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pycopilot"]

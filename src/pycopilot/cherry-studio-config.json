@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "pycopilot": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "D:\\Home\\Projects\\PyCopilot",
+        "main.py"
+      ]
+    }
+  }
+}
